@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
 }
 
 body{
@@ -19,6 +21,7 @@ body{
     font-weight: 600;
     font-size: 2.3em;
     margin: 10px 0;
+    text-transform: 0.4em;
 }
 
 #clock #time{
@@ -27,14 +30,15 @@ body{
 
 
 #clock #time div{
-    box-reflect: below 1px linear-gradient(transparent, #0004);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
     position: relative;
     margin: 0 5px;
 }
 
-#clock #time div span{
+#clock #time div span {
+    position: relative;
     display: block;
-    color: white;
+    color: floralwhite;
     width: 100px;
     height: 80px;
     font-weight: 300;
@@ -44,5 +48,35 @@ body{
     justify-content: center;
     z-index: 10;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-    font-size: 1.9em;
+    font-size: 3em;
+}
+
+#clock #time div span:nth-child(2) {
+    height: 30px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    background: #127fd6;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    letter-spacing: 0.2em;
+}
+
+#clock #time div:nth-last-child(2) span {
+    background: #ff006a;
+}
+
+#clock #time div:nth-last-child(2) span:nth-child(2) {
+    background: #ec0062;
+}
+
+#clock #time div:nth-last-child(1) span {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 40px;
+    font-size: 1.5em;
+    background: #fff;
+    color: #000;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
 }
