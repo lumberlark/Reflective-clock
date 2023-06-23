@@ -8,10 +8,11 @@
 
 body{
     display: flex;
-    background: black;
+    background:black ;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    
 }
 
 #clock h2{
@@ -30,7 +31,7 @@ body{
 
 
 #clock #time div{
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0004);
     position: relative;
     margin: 0 5px;
 }
@@ -42,7 +43,7 @@ body{
     width: 100px;
     height: 80px;
     font-weight: 300;
-    background: #2196f3;
+    background: lime;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +56,7 @@ body{
     height: 30px;
     font-size: 0.7em;
     text-transform: uppercase;
-    background: #127fd6;
+    background: darkslategray;
     font-weight: 500;
     z-index: 9;
     box-shadow: none;
@@ -63,11 +64,12 @@ body{
 }
 
 #clock #time div:nth-last-child(2) span {
-    background: #ff006a;
+    background: steelblue;
+    
 }
 
 #clock #time div:nth-last-child(2) span:nth-child(2) {
-    background: #ec0062;
+    background: darkslategray;
 }
 
 #clock #time div:nth-last-child(1) span {
@@ -76,7 +78,7 @@ body{
     width: 60px;
     height: 40px;
     font-size: 1.5em;
-    background: #fff;
-    color: #000;
+    background: darkslategray;
+    color: white;
     -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
 }
