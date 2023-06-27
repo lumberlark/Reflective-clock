@@ -26,4 +26,20 @@ function clock(){
     
 }
 
+var t = new Date().getHours();
+if(t<10){
+    document.body.style.backgroundColor="skyblue";
+    document.getElementById("sun").style.display = 'block';
+}
+else if (t<20){
+    document.body.style.backgroundColor="orange";
+    document.getElementById("sun").style.display = 'block';
+}
+else{
+    
+    document.body.style.backgroundColor="#001";
+    document.getElementById("moon").style.display = 'block';
+}
+
+
 var interval = setInterval(clock, 1000);
